@@ -8,7 +8,7 @@ https://pag.ae/bgsSJ26
 
 bitcoin:
 381rnKkZgmAobgydDfmX4UAPezFTUjKDub
-
+<html>
 <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
 <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -18,3 +18,4 @@ bitcoin:
 <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 </form>
 <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+</html>
