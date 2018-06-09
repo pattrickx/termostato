@@ -13,24 +13,24 @@ int termostato::setPinact(int pin)
 
 void termostato::actionHot()
 {pinMode(pinAct, OUTPUT);
-	if ( temperature<tempEnd )
+	if ( temperature<tempEnd-3 )
 	{
-		digitalWrite(pinAct,HIGH);
+		digitalWrite(pinAct,LOW);
 	}
-	else{
-	     digitalWrite(pinAct,LOW);
+	else if ( temperature>=tempEnd ){
+	     digitalWrite(pinAct,HIGH);
 	
 	}
 }
 
 void termostato::actionCold()
 {   pinMode(pinAct, OUTPUT);
-	if ( temperature>tempEnd )
+	if ( temperature>tempEnd+3 )
 	{
-		digitalWrite(pinAct,HIGH);
+		digitalWrite(pinAct,LOW);
 	}
-	else{
-	     digitalWrite(pinAct,LOW);
+	else if ( temperature<=tempEnd ){
+	     digitalWrite(pinAct,HIGH);
 	
 	}
 }
